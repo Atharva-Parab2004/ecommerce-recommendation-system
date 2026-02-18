@@ -1,0 +1,101 @@
+Product_ID,Category,Subcategory,Price,Brand,Average_Rating_of_Similar_Products,Product_Rating,Customer_Review_Sentiment_Score,Holiday,Season,Geographical_Location,Similar_Product_List,Probability_of_Recommendation,image_path
+PROD_001,Books,Children,961.98,Amazon Basics,4.8,4.8,0.35,Diwali,Summer,Canada,"PROD_060,PROD_003,PROD_041,PROD_010,PROD_031",0.58,product_2.jpg
+PROD_002,Food,Baking,697.15,LG,3.5,3.1,0.4,Christmas,Fall,Canada,"PROD_081,PROD_090,PROD_043,PROD_065,PROD_002",0.65,product_6.jpg
+PROD_003,Food,Canned Goods,162.17,Nike,4.3,4.7,0.36,Diwali,Summer,Canada,"PROD_063,PROD_089,PROD_014,PROD_083,PROD_043",0.83,product_3.jpg
+PROD_004,Sports,Team Sports,421.55,Adidas,4.4,4.1,0.41,New Year,Winter,UK,"PROD_009,PROD_090,PROD_040,PROD_081,PROD_051",0.64,product_1.jpg
+PROD_005,Beauty,Skincare,327.09,Adidas,4.7,4.7,0.33,Eid,Winter,Canada,"PROD_074,PROD_032,PROD_014,PROD_023,PROD_097",0.91,product_3.jpg
+PROD_006,Sports,Outdoor,252.09,Adidas,3.3,3.7,0.33,Diwali,Winter,US,"PROD_078,PROD_082,PROD_058,PROD_087,PROD_021",0.52,product_1.jpg
+PROD_007,Beauty,Makeup,254.01,Adidas,3.6,4.2,0.68,None,Fall,US,"PROD_082,PROD_060,PROD_096,PROD_074,PROD_076",0.66,product_7.jpg
+PROD_008,Food,Beverages,605.34,Microsoft,3.8,3.2,0.62,New Year,Summer,US,"PROD_052,PROD_051,PROD_099,PROD_042,PROD_016",0.94,product_7.jpg
+PROD_009,Beauty,Fragrances,692.55,LG,4.7,3.0,0.5,New Year,Fall,India,"PROD_007,PROD_071,PROD_037,PROD_012,PROD_016",0.56,product_4.jpg
+PROD_010,Sports,Cycling,88.77,Nike,4.9,3.3,0.66,Christmas,Winter,Australia,"PROD_085,PROD_031,PROD_052,PROD_011,PROD_023",0.92,product_3.jpg
+PROD_011,Beauty,Skincare,637.09,Nike,4.8,3.1,0.38,New Year,Fall,US,"PROD_047,PROD_088,PROD_032,PROD_079,PROD_035",0.74,product_4.jpg
+PROD_012,Home & Kitchen,Cookware,468.47,Apple,3.8,4.6,0.37,Diwali,Spring,US,"PROD_078,PROD_082,PROD_016,PROD_056,PROD_099",0.53,product_5.jpg
+PROD_013,Sports,Cycling,642.09,Nike,4.5,4.4,0.56,Eid,Fall,UK,"PROD_042,PROD_089,PROD_057,PROD_092,PROD_002",0.74,product_2.jpg
+PROD_014,Food,Canned Goods,59.34,Samsung,3.0,3.7,0.44,Christmas,Winter,India,"PROD_028,PROD_039,PROD_026,PROD_075,PROD_016",0.69,product_6.jpg
+PROD_015,Books,Non-Fiction,375.54,Microsoft,3.2,3.8,0.43,New Year,Winter,UK,"PROD_068,PROD_070,PROD_077,PROD_031,PROD_029",0.66,product_3.jpg
+PROD_016,Clothing,Shoes,106.87,Adidas,5.0,4.2,0.37,Diwali,Winter,India,"PROD_030,PROD_016,PROD_099,PROD_012,PROD_054",0.82,product_4.jpg
+PROD_017,Clothing,Jeans,78.08,Samsung,3.5,3.5,0.68,Christmas,Spring,Australia,"PROD_025,PROD_068,PROD_021,PROD_066,PROD_054",0.82,product_2.jpg
+PROD_018,Home & Kitchen,Decor,719.72,Apple,4.7,5.0,0.86,New Year,Summer,India,"PROD_090,PROD_008,PROD_100,PROD_009,PROD_086",0.59,product_5.jpg
+PROD_019,Clothing,Jackets,365.08,Amazon Basics,4.7,3.6,0.62,Diwali,Spring,India,"PROD_084,PROD_007,PROD_031,PROD_048,PROD_033",0.56,product_8.jpg
+PROD_020,Toys,Board Games,965.4,Samsung,4.5,4.0,0.33,Christmas,Fall,India,"PROD_088,PROD_025,PROD_001,PROD_099,PROD_054",0.81,product_9.jpg
+PROD_021,Home & Kitchen,Decor,10.87,Amazon Basics,4.3,3.3,0.87,Christmas,Winter,Australia,"PROD_071,PROD_095,PROD_092,PROD_005,PROD_093",0.82,product_9.jpg
+PROD_022,Electronics,Smartphones,385.23,Microsoft,3.1,3.8,0.66,Eid,Winter,Canada,"PROD_083,PROD_027,PROD_024,PROD_064,PROD_059",0.52,product_5.jpg
+PROD_023,Books,Children,719.12,Samsung,3.1,3.8,0.4,None,Winter,India,"PROD_081,PROD_071,PROD_035,PROD_095,PROD_084",0.91,product_1.jpg
+PROD_024,Beauty,Fragrances,652.55,Amazon Basics,4.3,3.8,0.87,None,Spring,Australia,"PROD_026,PROD_002,PROD_075,PROD_053,PROD_080",0.58,product_4.jpg
+PROD_025,Toys,Board Games,590.44,Nike,4.4,4.8,0.67,New Year,Spring,Canada,"PROD_056,PROD_055,PROD_013,PROD_061,PROD_081",0.76,product_1.jpg
+PROD_026,Sports,Outdoor,897.49,Samsung,3.9,4.2,0.52,New Year,Spring,Australia,"PROD_055,PROD_046,PROD_090,PROD_002,PROD_012",0.94,product_7.jpg
+PROD_027,Food,Canned Goods,228.83,Amazon Basics,4.1,4.7,0.63,Eid,Spring,UK,"PROD_021,PROD_036,PROD_052,PROD_051,PROD_040",0.79,product_9.jpg
+PROD_028,Home & Kitchen,Lighting,999.82,Adidas,3.8,3.8,0.43,Eid,Winter,US,"PROD_096,PROD_099,PROD_007,PROD_087,PROD_058",0.76,product_8.jpg
+PROD_029,Sports,Cycling,515.77,Nike,4.9,4.3,0.67,New Year,Fall,India,"PROD_072,PROD_022,PROD_059,PROD_028,PROD_080",0.61,product_5.jpg
+PROD_030,Home & Kitchen,Cookware,15.93,LG,3.1,3.3,0.37,Eid,Winter,Australia,"PROD_078,PROD_011,PROD_054,PROD_049,PROD_012",0.89,product_3.jpg
+PROD_031,Home & Kitchen,Cookware,916.76,Amazon Basics,4.6,3.4,0.32,Eid,Winter,Australia,"PROD_045,PROD_017,PROD_070,PROD_062,PROD_034",0.89,product_5.jpg
+PROD_032,Toys,Educational,680.59,Adidas,3.9,4.9,0.39,Diwali,Summer,US,"PROD_049,PROD_005,PROD_098,PROD_041,PROD_089",0.52,product_4.jpg
+PROD_033,Beauty,Haircare,956.95,Amazon Basics,3.2,3.5,0.56,New Year,Fall,India,"PROD_070,PROD_042,PROD_086,PROD_044,PROD_015",0.81,product_9.jpg
+PROD_034,Toys,Educational,785.46,Apple,4.4,3.6,0.81,New Year,Fall,UK,"PROD_081,PROD_001,PROD_017,PROD_028,PROD_061",0.77,product_6.jpg
+PROD_035,Home & Kitchen,Furniture,601.47,Adidas,3.2,3.2,0.89,Christmas,Summer,US,"PROD_059,PROD_067,PROD_010,PROD_054,PROD_035",0.82,product_5.jpg
+PROD_036,Toys,Board Games,786.34,Apple,4.7,4.7,0.71,Diwali,Fall,UK,"PROD_073,PROD_004,PROD_053,PROD_082,PROD_085",0.7,product_3.jpg
+PROD_037,Sports,Fitness,663.11,LG,4.6,4.7,0.34,Eid,Winter,Canada,"PROD_049,PROD_057,PROD_021,PROD_093,PROD_076",0.86,product_3.jpg
+PROD_038,Sports,Cycling,597.68,Samsung,4.0,4.3,0.42,New Year,Summer,UK,"PROD_019,PROD_011,PROD_053,PROD_005,PROD_100",0.53,product_8.jpg
+PROD_039,Books,Non-Fiction,518.14,Apple,3.1,4.7,0.64,Eid,Summer,Canada,"PROD_080,PROD_017,PROD_016,PROD_035,PROD_043",0.5,product_3.jpg
+PROD_040,Books,Non-Fiction,105.0,Samsung,3.1,3.3,0.73,Eid,Summer,UK,"PROD_076,PROD_060,PROD_067,PROD_058,PROD_042",0.86,product_2.jpg
+PROD_041,Sports,Cycling,941.88,LG,3.3,3.0,0.36,Christmas,Summer,India,"PROD_002,PROD_092,PROD_054,PROD_005,PROD_036",0.61,product_3.jpg
+PROD_042,Sports,Cycling,151.66,Samsung,4.3,3.0,0.66,None,Winter,Canada,"PROD_088,PROD_095,PROD_079,PROD_009,PROD_068",0.56,product_3.jpg
+PROD_043,Food,Canned Goods,968.71,Adidas,3.1,4.7,0.34,None,Fall,Australia,"PROD_043,PROD_087,PROD_008,PROD_001,PROD_072",0.9,product_8.jpg
+PROD_044,Beauty,Makeup,716.15,Amazon Basics,4.1,5.0,0.68,Christmas,Summer,India,"PROD_072,PROD_061,PROD_048,PROD_094,PROD_010",0.51,product_3.jpg
+PROD_045,Home & Kitchen,Furniture,943.14,Nike,3.6,3.3,0.72,Diwali,Fall,Australia,"PROD_058,PROD_044,PROD_007,PROD_069,PROD_009",0.94,product_3.jpg
+PROD_046,Toys,Educational,633.14,Microsoft,4.6,3.9,0.82,None,Winter,UK,"PROD_034,PROD_015,PROD_011,PROD_097,PROD_082",0.56,product_3.jpg
+PROD_047,Home & Kitchen,Furniture,153.34,Microsoft,4.2,4.9,0.42,Eid,Fall,UK,"PROD_037,PROD_088,PROD_034,PROD_089,PROD_076",0.81,product_3.jpg
+PROD_048,Sports,Cycling,494.56,Samsung,3.6,5.0,0.49,Diwali,Summer,Australia,"PROD_014,PROD_094,PROD_038,PROD_067,PROD_086",0.78,product_3.jpg
+PROD_049,Toys,Action Figures,521.96,Apple,3.0,3.7,0.7,Diwali,Fall,US,"PROD_036,PROD_062,PROD_067,PROD_053,PROD_023",0.84,product_9.jpg
+PROD_050,Food,Baking,960.61,Nike,3.8,4.8,0.36,Christmas,Winter,Australia,"PROD_086,PROD_041,PROD_043,PROD_004,PROD_009",0.85,product_8.jpg
+PROD_051,Home & Kitchen,Cookware,988.16,Microsoft,4.6,4.3,0.57,Christmas,Fall,UK,"PROD_037,PROD_067,PROD_038,PROD_013,PROD_014",0.84,product_6.jpg
+PROD_052,Beauty,Makeup,272.0,Adidas,4.1,4.0,0.73,Diwali,Summer,US,"PROD_004,PROD_071,PROD_069,PROD_047,PROD_077",0.86,product_5.jpg
+PROD_053,Home & Kitchen,Decor,781.76,Microsoft,4.6,5.0,0.77,Diwali,Fall,India,"PROD_060,PROD_075,PROD_044,PROD_070,PROD_021",0.79,product_2.jpg
+PROD_054,Clothing,T-Shirts,774.87,Microsoft,3.3,4.9,0.67,New Year,Winter,Canada,"PROD_015,PROD_054,PROD_021,PROD_052,PROD_010",0.89,product_4.jpg
+PROD_055,Toys,Educational,104.77,LG,4.6,3.9,0.72,New Year,Fall,US,"PROD_097,PROD_024,PROD_014,PROD_002,PROD_059",0.7,product_5.jpg
+PROD_056,Toys,Educational,572.01,Sony,3.1,3.4,0.77,None,Winter,US,"PROD_084,PROD_019,PROD_058,PROD_056,PROD_059",0.76,product_6.jpg
+PROD_057,Electronics,Headphones,668.63,Nike,4.6,3.7,0.81,Eid,Spring,US,"PROD_072,PROD_012,PROD_025,PROD_011,PROD_054",0.93,product_7.jpg
+PROD_058,Food,Beverages,498.58,LG,4.3,3.9,0.55,Christmas,Spring,US,"PROD_044,PROD_042,PROD_081,PROD_083,PROD_088",0.7,product_1.jpg
+PROD_059,Beauty,Skincare,463.58,Sony,3.5,4.5,0.72,Eid,Spring,US,"PROD_084,PROD_092,PROD_072,PROD_061,PROD_062",0.57,product_9.jpg
+PROD_060,Home & Kitchen,Decor,366.85,Sony,3.5,4.5,0.45,None,Summer,Australia,"PROD_069,PROD_096,PROD_006,PROD_046,PROD_084",0.89,product_8.jpg
+PROD_061,Books,Non-Fiction,749.72,Samsung,4.3,3.6,0.41,Eid,Summer,UK,"PROD_021,PROD_002,PROD_065,PROD_049,PROD_035",0.87,product_2.jpg
+PROD_062,Clothing,Jackets,652.0,Microsoft,4.6,3.9,0.56,None,Summer,India,"PROD_071,PROD_007,PROD_016,PROD_083,PROD_002",0.7,product_6.jpg
+PROD_063,Books,Non-Fiction,209.87,Adidas,3.6,4.5,0.33,Christmas,Winter,Canada,"PROD_051,PROD_022,PROD_013,PROD_079,PROD_069",0.73,product_5.jpg
+PROD_064,Electronics,Smartwatches,776.89,Samsung,3.1,4.3,0.47,Diwali,Fall,Canada,"PROD_087,PROD_071,PROD_098,PROD_084,PROD_066",0.65,product_9.jpg
+PROD_065,Electronics,Smartwatches,157.6,Nike,3.7,3.6,0.32,Eid,Fall,Australia,"PROD_019,PROD_063,PROD_092,PROD_050,PROD_093",0.74,product_7.jpg
+PROD_066,Toys,Outdoor,137.51,Adidas,4.0,3.7,0.74,Christmas,Spring,Australia,"PROD_060,PROD_052,PROD_017,PROD_013,PROD_068",0.57,product_9.jpg
+PROD_067,Electronics,Laptops,809.14,Sony,3.0,3.6,0.87,Eid,Winter,Canada,"PROD_088,PROD_031,PROD_021,PROD_089,PROD_039",0.71,product_7.jpg
+PROD_068,Books,Fiction,857.87,LG,4.9,4.6,0.55,Diwali,Spring,US,"PROD_041,PROD_072,PROD_085,PROD_075,PROD_060",0.91,product_4.jpg
+PROD_069,Toys,Educational,341.34,Apple,4.0,3.9,0.58,Diwali,Summer,US,"PROD_024,PROD_063,PROD_050,PROD_087,PROD_074",0.76,product_7.jpg
+PROD_070,Electronics,Laptops,172.17,Samsung,4.0,4.9,0.81,Diwali,Spring,India,"PROD_075,PROD_070,PROD_008,PROD_033,PROD_002",0.6,product_2.jpg
+PROD_071,Clothing,Jackets,969.34,Sony,3.8,3.1,0.62,Eid,Spring,UK,"PROD_041,PROD_060,PROD_020,PROD_006,PROD_025",0.59,product_9.jpg
+PROD_072,Books,Children,124.65,Samsung,3.4,4.5,0.63,None,Spring,UK,"PROD_006,PROD_045,PROD_094,PROD_015,PROD_072",0.85,product_4.jpg
+PROD_073,Beauty,Haircare,598.32,Apple,3.2,4.3,0.82,Christmas,Winter,India,"PROD_055,PROD_017,PROD_033,PROD_026,PROD_041",0.71,product_4.jpg
+PROD_074,Electronics,Laptops,287.26,Apple,3.8,4.7,0.3,New Year,Spring,UK,"PROD_067,PROD_015,PROD_043,PROD_003,PROD_089",0.93,product_3.jpg
+PROD_075,Electronics,Smartwatches,351.56,Adidas,3.4,3.1,0.35,New Year,Fall,UK,"PROD_099,PROD_010,PROD_061,PROD_012,PROD_050",0.69,product_8.jpg
+PROD_076,Clothing,Jeans,803.63,Nike,4.6,4.5,0.89,Eid,Winter,Canada,"PROD_042,PROD_077,PROD_034,PROD_032,PROD_076",0.95,product_3.jpg
+PROD_077,Sports,Team Sports,821.54,Adidas,4.7,3.5,0.39,Christmas,Winter,Australia,"PROD_082,PROD_088,PROD_041,PROD_019,PROD_042",0.88,product_9.jpg
+PROD_078,Clothing,Jeans,408.22,Amazon Basics,3.8,3.9,0.5,Eid,Summer,Australia,"PROD_084,PROD_055,PROD_036,PROD_014,PROD_012",0.87,product_1.jpg
+PROD_079,Toys,Educational,715.89,Amazon Basics,4.6,4.0,0.46,Eid,Fall,Canada,"PROD_068,PROD_009,PROD_084,PROD_016,PROD_045",0.79,product_5.jpg
+PROD_080,Sports,Team Sports,456.48,Sony,4.7,3.2,0.44,Christmas,Winter,India,"PROD_002,PROD_039,PROD_040,PROD_095,PROD_045",0.9,product_2.jpg
+PROD_081,Sports,Outdoor,645.45,Amazon Basics,4.8,5.0,0.73,Diwali,Summer,India,"PROD_100,PROD_009,PROD_095,PROD_094,PROD_057",0.91,product_8.jpg
+PROD_082,Beauty,Skincare,275.97,Amazon Basics,4.8,4.1,0.43,Eid,Fall,UK,"PROD_056,PROD_012,PROD_084,PROD_015,PROD_096",0.75,product_1.jpg
+PROD_083,Home & Kitchen,Cookware,577.99,LG,3.7,4.7,0.47,Christmas,Spring,Canada,"PROD_056,PROD_030,PROD_033,PROD_031,PROD_023",0.58,product_3.jpg
+PROD_084,Beauty,Fragrances,991.17,LG,3.3,4.7,0.43,Diwali,Fall,Canada,"PROD_098,PROD_018,PROD_053,PROD_078,PROD_055",0.94,product_3.jpg
+PROD_085,Books,Educational,30.23,Sony,4.8,4.6,0.88,Christmas,Fall,Australia,"PROD_015,PROD_093,PROD_028,PROD_054,PROD_074",0.63,product_4.jpg
+PROD_086,Home & Kitchen,Decor,76.06,Microsoft,4.4,4.2,0.71,Christmas,Fall,UK,"PROD_005,PROD_098,PROD_087,PROD_009,PROD_010",0.66,product_2.jpg
+PROD_087,Home & Kitchen,Decor,453.96,Adidas,4.8,4.0,0.3,None,Spring,US,"PROD_057,PROD_010,PROD_090,PROD_037,PROD_043",0.92,product_6.jpg
+PROD_088,Books,Non-Fiction,750.17,LG,4.9,3.3,0.84,Eid,Summer,US,"PROD_013,PROD_092,PROD_017,PROD_076,PROD_067",0.82,product_4.jpg
+PROD_089,Food,Snacks,48.23,Amazon Basics,4.6,4.2,0.41,New Year,Summer,Canada,"PROD_091,PROD_083,PROD_080,PROD_067,PROD_051",0.76,product_6.jpg
+PROD_090,Books,Fiction,135.65,Sony,3.1,3.1,0.36,Eid,Winter,US,"PROD_066,PROD_016,PROD_089,PROD_039,PROD_042",0.9,product_2.jpg
+PROD_091,Beauty,Haircare,639.02,Microsoft,5.0,4.3,0.52,Christmas,Spring,UK,"PROD_033,PROD_073,PROD_019,PROD_066,PROD_090",0.62,product_2.jpg
+PROD_092,Toys,Outdoor,874.8,LG,3.1,4.2,0.37,Christmas,Winter,UK,"PROD_060,PROD_017,PROD_088,PROD_089,PROD_077",0.82,product_7.jpg
+PROD_093,Beauty,Makeup,714.16,Amazon Basics,4.0,3.6,0.52,Christmas,Fall,US,"PROD_046,PROD_099,PROD_028,PROD_026,PROD_034",0.85,product_3.jpg
+PROD_094,Beauty,Makeup,840.87,Sony,4.3,3.5,0.31,New Year,Winter,US,"PROD_063,PROD_019,PROD_089,PROD_069,PROD_095",0.56,product_1.jpg
+PROD_095,Toys,Educational,434.36,Adidas,4.5,4.6,0.63,None,Fall,UK,"PROD_037,PROD_009,PROD_063,PROD_074,PROD_045",0.76,product_9.jpg
+PROD_096,Clothing,Jeans,49.02,Samsung,4.5,3.6,0.8,Christmas,Fall,UK,"PROD_065,PROD_037,PROD_061,PROD_054,PROD_032",0.54,product_7.jpg
+PROD_097,Clothing,T-Shirts,899.51,Apple,4.4,3.4,0.86,Diwali,Winter,UK,"PROD_024,PROD_042,PROD_059,PROD_008,PROD_066",0.56,product_4.jpg
+PROD_098,Clothing,Jackets,821.38,Samsung,3.2,4.3,0.85,Christmas,Spring,Canada,"PROD_031,PROD_014,PROD_019,PROD_026,PROD_063",0.9,product_8.jpg
+PROD_099,Sports,Cycling,196.95,LG,3.2,3.3,0.39,None,Spring,Australia,"PROD_074,PROD_081,PROD_093,PROD_088,PROD_078",0.65,product_4.jpg
+PROD_100,Clothing,Jackets,334.41,Microsoft,3.7,4.5,0.84,New Year,Fall,Canada,"PROD_086,PROD_094,PROD_019,PROD_014,PROD_054",0.73,product_8.jpg

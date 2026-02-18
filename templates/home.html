@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+
+{% block title %}Home - E-Shop AI{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<div class="bg-light p-5 rounded mb-5 shadow-sm">
+    <div class="container text-center">
+        <h1 class="display-5 fw-bold">Welcome to E-Shop AI</h1>
+        <p class="lead text-muted">
+            Discover smart AI-curated products tailored for you.
+        </p>
+        <a href="{{ url_for('products') }}" class="btn btn-primary btn-lg mt-3">
+            <i class="bi bi-shop me-2"></i>Start Shopping
+        </a>
+    </div>
+</div>
+
+<!-- Featured Products -->
+<section class="mb-5">
+    <h2 class="mb-4">
+        <i class="bi bi-star-fill text-warning me-2"></i>Featured Products
+    </h2>
+
+    <div class="row">
+        {% for product in featured_products %}
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm">
+
+                <!-- Image with local path (no fallback) -->
+                <div class="position-relative">
+                    <img src="{{ url_for('static', filename='images/' + product.image_path) }}"
+                         class="card-img-top home-product-img"
+                         alt="{{ product.Brand }} - {{ product.Subcategory }}"
+                         style="height:200px; object-fit:cover;">
+                    
+                    {% if product.Product_Rating > 4.5 %}
+                    <span class="badge bg-warning position-absolute top-0 start-0 m-2">
+                        <i class="bi bi-star-fill me-1"></i>Top Rated
+                    </span>
+                    {% endif %}
+                </div>
+
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="badge bg-secondary">{{ product.Category }}</span>
+                        <small>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            {{ product.Product_Rating }}
+                        </small>
+                    </div>
+
+                    <!-- Brand normal -->
+                    <p class="mb-1 text-muted" style="font-weight: normal;">
+                        {{ product.Brand }}
+                    </p>
+
+                    <!-- Subcategory bold -->
+                    <h6 class="fw-bold mb-2">
+                        {{ product.Subcategory }}
+                    </h6>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="text-success fw-bold">
+                            ${{ "%.2f"|format(product.Price) }}
+                        </span>
+
+                        <button class="btn btn-primary btn-sm add-to-cart"
+                                data-product-id="{{ product.Product_ID }}"
+                                data-product-name="{{ product.Brand }} - {{ product.Subcategory }}">
+                            <i class="bi bi-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Login Notice (if user not logged in) -->
+{% if not session.get('loggedin') %}
+<div class="alert alert-info text-center mb-5">
+    <i class="bi bi-info-circle me-2"></i>
+    <a href="{{ url_for('login') }}" class="alert-link">Login</a> 
+    to get personalized recommendations and faster checkout.
+</div>
+{% endif %}
+
+<!-- Categories -->
+<section class="mb-5">
+    <h2 class="mb-4">
+        <i class="bi bi-tags me-2"></i>Shop by Category
+    </h2>
+
+    <div class="row text-center">
+        {% for category in categories[:6] %}
+        <div class="col-md-2 col-6 mb-3">
+            <a href="{{ url_for('products', category=category) }}"
+               class="text-decoration-none text-dark">
+                <div class="card py-3 shadow-sm category-card">
+                    <i class="bi bi-box display-6"></i>
+                    <span class="mt-2 fw-semibold">{{ category }}</span>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Add to cart functionality
+    document.querySelectorAll(".add-to-cart").forEach(button => {
+        button.addEventListener("click", function() {
+            const productId = this.dataset.productId;
+            const productName = this.dataset.productName;
+
+            fetch("/add_to_cart", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: "product_id=" + productId
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    alert(productName + " added to cart!");
+                    const badge = document.querySelector(".cart-badge");
+                    if (badge) badge.textContent = data.cart_count;
+                } else {
+                    // Redirect to login with next parameter
+                    window.location.href = "/login?next=" + encodeURIComponent(window.location.pathname);
+                }
+            });
+        });
+    });
+});
+</script>
+{% endblock %}

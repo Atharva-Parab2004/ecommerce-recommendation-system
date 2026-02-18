@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+
+{% block title %}Register - E-Shop AI{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6 col-lg-5">
+        <div class="card">
+            <div class="card-body p-4 p-md-5">
+                <!-- Header -->
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold text-primary">
+                        <i class="bi bi-person-plus me-2"></i>Create Account
+                    </h2>
+                    <p class="text-muted">Join E-Shop AI for personalized recommendations</p>
+                </div>
+
+                <!-- Registration Form -->
+                <form method="POST" action="{{ url_for('register') }}" id="registerForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">
+                            <i class="bi bi-person me-1"></i>Full Name
+                        </label>
+                        <input type="text" class="form-control" id="name" name="name"
+                               placeholder="Enter your full name" required
+                               pattern="[A-Za-z\s]{3,50}">
+                        <div class="invalid-feedback">
+                            Please enter a valid name (3–50 characters).
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">
+                            <i class="bi bi-envelope me-1"></i>Email Address
+                        </label>
+                        <input type="email" class="form-control" id="email" name="email"
+                               placeholder="Enter your email" required>
+                        <div class="form-text">
+                            We'll never share your email with anyone else.
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter a valid email address.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">
+                            <i class="bi bi-lock me-1"></i>Password
+                        </label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="password" name="password"
+                                   placeholder="Create a password" required
+                                   pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*#?&]{6,}$">
+                            <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                        </div>
+                        <div class="invalid-feedback">
+                            Password must be at least 6 characters with letters and numbers.
+                        </div>
+                        <div class="progress mt-2" style="height: 5px;">
+                            <div id="passwordStrength" class="progress-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="terms" required>
+                            <label class="form-check-label" for="terms">
+                                I agree to the
+                                <a href="#" class="text-decoration-none">Terms & Conditions</a>
+                                and
+                                <a href="#" class="text-decoration-none">Privacy Policy</a>
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree to the terms and conditions.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="bi bi-person-plus me-2"></i>Create Account
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Login Link -->
+                <div class="text-center mt-4">
+                    <p class="text-muted mb-0">Already have an account?</p>
+                    <a href="{{ url_for('login') }}" class="text-decoration-none">
+                        <i class="bi bi-box-arrow-in-right me-1"></i>Sign in here
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="row mt-4">
+            <div class="col-md-4 mb-3 text-center">
+                <i class="bi bi-stars text-primary fs-4"></i>
+                <h6 class="mt-2">AI Recommendations</h6>
+                <p class="text-muted small">Personalized suggestions</p>
+            </div>
+            <div class="col-md-4 mb-3 text-center">
+                <i class="bi bi-shield-check text-primary fs-4"></i>
+                <h6 class="mt-2">Secure</h6>
+                <p class="text-muted small">Protected user data</p>
+            </div>
+            <div class="col-md-4 mb-3 text-center">
+                <i class="bi bi-truck text-primary fs-4"></i>
+                <h6 class="mt-2">Fast Delivery</h6>
+                <p class="text-muted small">Quick shipping</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Toggle password visibility
+    $('#togglePassword').click(function () {
+        const passwordInput = $('#password');
+        const icon = $(this).find('i');
+
+        if (passwordInput.attr('type') === 'password') {
+            passwordInput.attr('type', 'text');
+            icon.removeClass('bi-eye').addClass('bi-eye-slash');
+        } else {
+            passwordInput.attr('type', 'password');
+            icon.removeClass('bi-eye-slash').addClass('bi-eye');
+        }
+    });
+
+    // Password strength meter
+    $('#password').on('input', function () {
+        const password = $(this).val();
+        let strength = 0;
+        const bar = $('#passwordStrength');
+
+        if (password.length >= 8) strength += 25;
+        if (/[a-z]/.test(password)) strength += 25;
+        if (/[A-Z]/.test(password)) strength += 25;
+        if (/[0-9]/.test(password)) strength += 25;
+
+        bar.css('width', strength + '%');
+
+        bar.removeClass('bg-danger bg-warning bg-success');
+        if (strength < 50) bar.addClass('bg-danger');
+        else if (strength < 75) bar.addClass('bg-warning');
+        else bar.addClass('bg-success');
+    });
+
+    // Form validation
+    $('#registerForm').submit(function () {
+        if (!$('#terms').is(':checked')) {
+            $('#terms').addClass('is-invalid');
+            return false;
+        }
+    });
+</script>
+{% endblock %}
