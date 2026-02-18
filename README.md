@@ -171,8 +171,6 @@ http://127.0.0.1:5000
 - Collaborative Filtering
 - Deep Learning Recommendation Model
 - Admin Dashboard
-- Payment Gateway Integration
-- Deployment on Cloud (Render / AWS)
 
 ---
 
