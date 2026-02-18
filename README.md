@@ -146,6 +146,10 @@ http://127.0.0.1:5000
 ![Login](screenshots/login-page.png)
 
 ---
+### 📝 Register Page
+![Register](screenshots/register-page.png)
+
+---
 
 ### 🏠 Home Page
 ![Home](screenshots/home-page.png)
@@ -159,11 +163,6 @@ http://127.0.0.1:5000
 
 ### 🤖 Recommendation Page
 ![Recommendation](screenshots/recommendation-page.png)
-
----
-
-### 📝 Register Page
-![Register](screenshots/register-page.png)
 
 ---
 
